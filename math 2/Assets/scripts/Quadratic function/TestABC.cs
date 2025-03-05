@@ -5,11 +5,11 @@ using UnityEngine;
 public class TestABC : MonoBehaviour
 {
 
-    QuadraticFunction f = new QuadraticFunction(2,-3,-5);
+    // QuadraticFunction f = new QuadraticFunction(2,-3,-5);
     // Start is called before the first frame update
     void Start()
     {
-        print(f.findZero());
+        // print(f.findZero());
     }
 
     // Update is called once per frame
