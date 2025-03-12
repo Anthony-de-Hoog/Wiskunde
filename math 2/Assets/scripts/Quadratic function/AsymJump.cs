@@ -7,7 +7,7 @@ public class AsymJump : MonoBehaviour
     float g = -10;
     float vbegin = 10f;
     float hbegin = 0f;
-    float horizontalSpeed = 5f; // Add a horizontal speed
+    float horizontalSpeed = 5f; 
 
     Animator animator;
     QuadraticFunction jumpduration;
@@ -22,7 +22,7 @@ public class AsymJump : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.speed = 0;
+        animator.speed =  0;
         jumpduration = new QuadraticFunction(g / 2, vbegin, hbegin);
 
         print(jumpduration);
@@ -35,7 +35,7 @@ public class AsymJump : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 myState = State.airborn;
-                animator.speed = 1;
+                animator.speed =  0.351f;
                 StartCoroutine(Jump());
             }
         }
@@ -44,7 +44,7 @@ public class AsymJump : MonoBehaviour
     IEnumerator Jump()
     {
         float time = 0;
-        Vector2 zero = jumpduration.findZero();
+        UnityEngine.Vector2 zero = jumpduration.findZero();
         float jumpDuration = zero.x > zero.y ? zero.x : zero.y;
 
         while (time < jumpDuration)

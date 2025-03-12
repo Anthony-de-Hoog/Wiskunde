@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class QuadraticFunction
@@ -20,15 +18,15 @@ public class QuadraticFunction
         return a * t * t + b * t + c;
     }
 
-    public Vector2 findZero()
+    public UnityEngine.Vector2 findZero()
     {
-        Vector2 isZero = new Vector2();
+        UnityEngine.Vector2 isZero = new UnityEngine.Vector2();
         float D = (this.b * this.b) - (4 * this.a * this.c);
 
         if (D < 0)
         {
             // No real roots
-            isZero = Vector2.zero;
+            isZero = UnityEngine.Vector2.zero;
         }
         else if (D == 0)
         {
