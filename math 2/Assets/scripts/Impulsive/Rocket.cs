@@ -48,7 +48,7 @@ public class Rocket : MonoBehaviour
 
             case State.accelerate:
                 spriteRenderer.sprite = sprites[1];
-                transform.position += velocity * Time.deltaTime;
+                velocity += transform.right * Time.deltaTime;
                 if (Input.GetKeyUp(KeyCode.Space))
                 {
                     myState = State.rest;

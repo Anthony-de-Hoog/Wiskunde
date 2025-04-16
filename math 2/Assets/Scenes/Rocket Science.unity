@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1229320868}
   - component: {fileID: 1229320869}
+  - component: {fileID: 1229320870}
   m_Layer: 0
   m_Name: rocket-no-thust
   m_TagString: Untagged
@@ -206,6 +207,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1229320870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229320867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6212a69645209aa44918371bb1042e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f825ec9eefdccce4d9090bc05d81b3e9, type: 3}
+  - {fileID: 21300000, guid: b55a4f44df50500408509f1cb8276df1, type: 3}
+  - {fileID: 21300000, guid: 718cf8c056b33c74482b1d51136a6e8f, type: 3}
+  - {fileID: 21300000, guid: dc10f4d67dfcaa9488510e42a09bb59a, type: 3}
 --- !u!1 &1805961667
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +325,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1978988590}
-  - component: {fileID: 1978988591}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -331,23 +348,6 @@ Transform:
   - {fileID: 1229320868}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1978988591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978988589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6212a69645209aa44918371bb1042e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: f825ec9eefdccce4d9090bc05d81b3e9, type: 3}
-  - {fileID: 21300000, guid: b55a4f44df50500408509f1cb8276df1, type: 3}
-  - {fileID: 21300000, guid: 718cf8c056b33c74482b1d51136a6e8f, type: 3}
-  - {fileID: 21300000, guid: dc10f4d67dfcaa9488510e42a09bb59a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
